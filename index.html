@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="/test-twitter-dapp/ded_twitter_bird.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="content-security-policy" content="">
+	<link rel="modulepreload" href="/test-twitter-dapp/_app/start-7fa85380.js">
+	<link rel="modulepreload" href="/test-twitter-dapp/_app/chunks/index-6048a82b.js">
+	<link rel="modulepreload" href="/test-twitter-dapp/_app/chunks/index-40cd86c2.js">
+        <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    </head>
+    <body>
+
+        <div>
+		<script type="module" data-hydrate="45h">
+		import { start } from "/test-twitter-dapp/_app/start-7fa85380.js";
+		start({
+			target: document.querySelector('[data-hydrate="45h"]').parentNode,
+			paths: {"base":"/test-twitter-dapp","assets":"/test-twitter-dapp"},
+			session: {},
+			route: true,
+			spa: true,
+			trailing_slash: "never",
+			hydrate: null
+		});
+	</script></div>
+    </body>
+</html>
