@@ -1,7 +1,7 @@
 <script lang="ts">
     import WalletConnectButton from "./WalletConnectButton.svelte";
     import { selectedAccount, connected } from "svelte-web3";
-    const defaultAvatar = "defaultPFP.webp";
+    const defaultAvatar = "https://cdn.discordapp.com/attachments/954020168697270322/973024965362327653/defaultPFP.webp";
 </script>
 
 <div

@@ -20,11 +20,12 @@
             return `${seconds} seconds ago`;
         }
     };
+    const defaultAvatar = "https://cdn.discordapp.com/attachments/954020168697270322/973024965362327653/defaultPFP.webp";
 </script>
 
 <!-- <a href=""> -->
 <div class="flex flex-row p-4 gap-4 cursor-pointer">
-    <img src="defaultPFP.webp" class="w-12 h-12 rounded-full" alt="" />
+    <img src={defaultAvatar} class="w-12 h-12 rounded-full" alt="" />
     <div class="flex flex-col overflow-ellipsis break-words max-w-full">
         <div class="flex flex-row gap-2 text-base break-words">
             <a

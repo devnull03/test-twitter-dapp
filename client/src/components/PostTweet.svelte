@@ -3,6 +3,7 @@
 
     $: transction = Promise.resolve();
     $: wordCount = 0;
+    const defaultAvatar = "https://cdn.discordapp.com/attachments/954020168697270322/973024965362327653/defaultPFP.webp";
 
     const postTweet = async (e: Event) => {
         e.preventDefault();
@@ -31,7 +32,7 @@
         on:submit={postTweet}
     >
         <div class="flex flex-row gap-7">
-            <img src="defaultPFP.webp" class="w-12 h-12 rounded-full" alt="" />
+            <img src={defaultAvatar} class="w-12 h-12 rounded-full" alt="" />
             <textarea
                 placeholder="What's happening?"
                 name="tweet-content"
